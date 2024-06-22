@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Main layout container with VBox -->
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.CombinedViewController" spacing="20" alignment="CENTER">
+    <!-- Button to toggle between Table and Chart view -->
+    <Button fx:id="toggleButton" text="Show Chart" onAction="#handleToggleChart" styleClass="button"/>
+
+    <!-- StackPane to overlay TableView and VBox (chart container) -->
+    <StackPane fx:id="stackPane" prefWidth="800" prefHeight="600" styleClass="stack-pane">
+        <!-- TableView for displaying IPL team data -->
+        <TableView fx:id="tableView" styleClass="table-view">
+            <columns>
+                <TableColumn fx:id="teamNameColumn" text="Team Name" />
+                <TableColumn fx:id="winsColumn" text="Wins" />
+                <TableColumn fx:id="lossesColumn" text="Losses" />
+                <TableColumn fx:id="runRateColumn" text="Run Rate" />
+            </columns>
+        </TableView>
+
+        <!-- VBox container for BarChart and RadioButtons -->
+        <VBox fx:id="chartContainer" alignment="CENTER" spacing="20" styleClass="chart-container">
+            <!-- BarChart for displaying IPL team performance data -->
+            <BarChart fx:id="barChart" animated="false" legendVisible="true">
+                <xAxis>
+                    <CategoryAxis fx:id="xAxis" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="yAxis" />
+                </yAxis>
+            </BarChart>
+
+            <!-- HBox container for RadioButtons to toggle between different chart data -->
+            <HBox spacing="20" alignment="CENTER">
+                <RadioButton fx:id="winsRadioButton" text="Wins" selected="true" onAction="#handleRadioButtonAction" styleClass="radio-button"/>
+                <RadioButton fx:id="lossesRadioButton" text="Losses" onAction="#handleRadioButtonAction" styleClass="radio-button"/>
+                <RadioButton fx:id="runRateRadioButton" text="Run Rate" onAction="#handleRadioButtonAction" styleClass="radio-button"/>
+            </HBox>
+        </VBox>
+    </StackPane>
+</VBox>

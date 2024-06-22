@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.IPLTableViewController">
+    <TableView fx:id="tableView" prefWidth="800" prefHeight="600">
+        <columns>
+            <TableColumn fx:id="teamNameColumn" text="Team Name" />
+            <TableColumn fx:id="winsColumn" text="Wins" />
+            <TableColumn fx:id="lossesColumn" text="Losses" />
+            <TableColumn fx:id="runRateColumn" text="Run Rate" />
+        </columns>
+    </TableView>
+</AnchorPane>

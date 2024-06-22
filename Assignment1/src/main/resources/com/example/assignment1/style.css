@@ -1,0 +1,112 @@
+/* Root layout styling */
+.root {
+    -fx-font-family: "Roboto", Arial, sans-serif; /* Sets the default font family for the root layout */
+    -fx-background-color: #e6f7ff; /* Sets a light blue background color */
+    -fx-padding: 20px; /* Adds padding around the root layout */
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: #ffffff; /* Sets the background color of the TableView to white */
+    -fx-border-color: #b3d9ff; /* Sets the border color to light blue */
+    -fx-border-width: 1px; /* Sets the width of the border */
+    -fx-border-radius: 10px; /* Rounds the corners of the border */
+    -fx-background-radius: 10px; /* Rounds the corners of the background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0.0, 0, 10); /* Adds a drop shadow effect */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0059b3; /* Sets the background color of the column headers to dark blue */
+    -fx-text-fill: white; /* Sets the text color to white */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #0059b3; /* Sets the background color of the column headers and filler to dark blue */
+    -fx-text-fill: white; /* Sets the text color to white */
+    -fx-padding: 10px; /* Adds padding inside the column headers and filler */
+    -fx-font-weight: bold; /* Makes the text bold */
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #f2f9ff; /* Sets the background color of table rows to a light blue */
+    -fx-border-color: transparent; /* Makes the border color transparent */
+    -fx-padding: 10px; /* Adds padding inside the table rows */
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #ffffff; /* Sets the background color of odd table rows to white */
+}
+
+.table-view .table-cell {
+    -fx-padding: 10px; /* Adds padding inside the table cells */
+}
+
+/* BarChart styling */
+.bar-chart .chart-legend {
+    -fx-background-color: #ffffff; /* Sets the background color of the chart legend to white */
+    -fx-padding: 10px; /* Adds padding inside the chart legend */
+    -fx-border-color: #b3d9ff; /* Sets the border color of the chart legend to light blue */
+    -fx-border-width: 1px; /* Sets the width of the border */
+}
+
+.bar-chart .chart-bar {
+    -fx-bar-width: 15px; /* Sets the width of the bars */
+    -fx-padding: 5px; /* Adds padding around the bars */
+    -fx-background-color: linear-gradient(to top, #66b2ff, #0099cc); /* Sets a gradient color for the bars */
+}
+
+.bar-chart .chart-plot-background {
+    -fx-background-color: #e6f7ff; /* Sets the background color of the chart plot area to light blue */
+}
+
+.chart-container {
+    -fx-background-color: #ffffff; /* Sets the background color of the chart container to white */
+    -fx-padding: 20px; /* Adds padding inside the chart container */
+    -fx-border-color: #b3d9ff; /* Sets the border color to light blue */
+    -fx-border-width: 1px; /* Sets the width of the border */
+    -fx-border-radius: 10px; /* Rounds the corners of the border */
+    -fx-background-radius: 10px; /* Rounds the corners of the background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0.0, 0, 10); /* Adds a drop shadow effect */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #007acc; /* Sets the background color of the button to blue */
+    -fx-text-fill: white; /* Sets the text color to white */
+    -fx-padding: 10px 20px; /* Adds padding inside the button */
+    -fx-font-size: 14px; /* Sets the font size of the button text */
+    -fx-cursor: hand; /* Changes the cursor to a hand when hovering over the button */
+    -fx-border-radius: 5px; /* Rounds the corners of the button border */
+    -fx-background-radius: 5px; /* Rounds the corners of the button background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0.0, 0, 1); /* Adds a drop shadow effect */
+    -fx-graphic: url("/com/example/assignment1/ipl_icon.png"); /* Adds an icon to the button */
+    -fx-graphic-text-gap: 10px; /* Sets the gap between the icon and the text */
+    -fx-font-family: "Roboto", Arial, sans-serif; /* Sets the font family of the button text */
+    -fx-transition: all 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.button:hover {
+    -fx-background-color: #0059b3; /* Changes the background color when the button is hovered */
+    -fx-scale-x: 1.1; /* Scales the button horizontally when hovered */
+    -fx-scale-y: 1.1; /* Scales the button vertically when hovered */
+}
+
+/* RadioButton styling */
+.radio-button {
+    -fx-text-fill: #0059b3; /* Sets the text color to dark blue */
+    -fx-font-size: 14px; /* Sets the font size */
+    -fx-padding: 5px; /* Adds padding around the radio button */
+    -fx-font-family: "Roboto", Arial, sans-serif; /* Sets the font family */
+}
+
+/* Tooltip styling */
+.tooltip {
+    -fx-background-color: #ffffff; /* Sets the background color to white */
+    -fx-text-fill: #333333; /* Sets the text color to dark gray */
+    -fx-padding: 10px; /* Adds padding inside the tooltip */
+    -fx-border-color: #b3d9ff; /* Sets the border color to light blue */
+    -fx-border-width: 1px; /* Sets the width of the border */
+    -fx-font-size: 12px; /* Sets the font size */
+    -fx-border-radius: 5px; /* Rounds the corners of the border */
+    -fx-background-radius: 5px; /* Rounds the corners of the background */
+}
